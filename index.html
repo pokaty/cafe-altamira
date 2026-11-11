@@ -61,16 +61,18 @@
         </article>
         <article class="producto">
           <img src="img/cafe-geisha.svg" alt="cafe Geisha" width="300" height="220">
-          <div class="nombre">Geisha de Altura</div>
+          <h3>Geisha de Altura</h3>
           <p>Origen: Apía, Risaralda · Notas: jazmín y durazno.</p>
           <p class="precio">$58.000 · 250 g</p>
         </div>
+        </article>
         <article class="producto">
           <img src="img/cafe-honey.svg" alt="cafe Honey" width="300" height="220">
-          <div class="nombre">Honey La Esmeralda</div>
+          <h3>Honey La Esmeralda</h3>
           <p>Origen: Belén de Umbría · Notas: miel y frutos rojos.</p>
           <p class="precio">$41.000 · 500 g</p>
         </div>
+        </article>
       </div>
     </section>
 
@@ -98,13 +100,14 @@
          - El campo de correo necesita: <label for="...">, type="email", id y required.
          - El "botón" es un div con onclick: cámbialo por <button type="submit">.
          ============================================================ -->
-    <div class="seccion" id="suscripcion">
-      <div class="subtitulo">Recibe nuestras novedades</div>
-      <div class="formulario">
-        <input type="text" placeholder="Tu correo">
-        <div class="boton" onclick="alert('¡Gracias!')">Suscribirme</div>
-      </div>
-    </div>
+    <section id="suscripcion" class="seccion">
+      <h2>Recibe nuestras novedades</h2>
+      <form>
+        <label for="correito">Nombre de usuario:</label>
+        <input type="email" id="correito" placeholder="Tu correo" required>
+        <button type="submit" class="boton" onclick="alert('¡Gracias!')">Suscribirme</button>
+      </form>
+    </section>
 
   </main>
 
