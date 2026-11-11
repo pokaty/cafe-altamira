@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catas de café · Café Altamira</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <a class="logo" href="index.html">
+      <img src="img/grano.svg" alt="" width="28" height="28">
+      Café Altamira
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#cafes">Cafés</a></li>
+        <li><a href="index.html#historia">Historia</a></li>
+        <li><a href="index.html#suscripcion">Suscripción</a></li>
+        <li><a href="eventos.html" aria-current="page">Catas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <h1>Experiencias cafeteras</h1>
+      <p>Descubre nuevos aromas, sabores y métodos de preparación en nuestras experiencias de café.</p>
+    </section>
+
+    <section class="seccion">
+      <h2>Próximas experiencias</h2>
+      <div class="productos">
+
+        <article class="producto">
+          <img src="img/cafe-clasico.svg" alt="Bolsa de café Altamira Clásico, de notas achocolatadas" width="300" height="220">
+          <h3>Introducción al café de origen</h3>
+          <p> Aprende a reconocer las características de un café cultivado en las montañas de Risaralda.</p>
+          <p>
+            <strong>Fecha:</strong>
+            <time datetime="2026-11-20T16:00"> 20 de noviembre de 2026 </time>
+          </p>
+
+          <p><strong>Horario:</strong> 4:00 p. m.</p>
+          <p><strong>Cupos disponibles:</strong> 10 personas</p>
+          <p class="precio">$28.000 por persona</p>
+        </article>
+        <article class="producto">
+          <img src="img/cafe-geisha.svg" alt="Bolsa de café Geisha de Altura, variedad especial de café" width="300" height="220">
+          <h3>Explorando aromas y sabores</h3>
+          <p> Identifica notas florales, frutales y dulces mediante una experiencia de degustación.</p><p>
+            <strong>Fecha:</strong>
+            <time datetime="2026-11-22T15:00">
+              22 de noviembre de 2026
+            </time>
+          </p>
+
+          <p><strong>Horario:</strong> 3:00 p. m.</p>
+          <p><strong>Cupos disponibles:</strong> 8 personas</p>
+          <p class="precio">$35.000 por persona</p>
+        </article>
+        <article class="producto">
+          <img src="img/cafe-honey.svg" alt="Bolsa de café Honey La Esmeralda, con notas de miel y frutos rojos" width="300" height="220">
+          <h3>Métodos de preparación artesanal</h3>
+          <p> Conoce diferentes técnicas de preparación y aprende a aprovechar cada característica del café. </p>
+          <p>
+            <strong>Fecha:</strong>
+            <time datetime="2026-11-27T10:00">
+              27 de noviembre de 2026
+            </time>
+          </p>
+          <p><strong>Horario:</strong> 10:00 a. m.</p>
+          <p><strong>Cupos disponibles:</strong> 12 personas</p>
+          <p class="precio">$32.000 por persona</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" id="inscripcion">
+      <h2>Reserva tu experiencia</h2>
+      <p>
+        Completa los siguientes datos para solicitar
+        tu inscripción a una de nuestras catas.
+      </p>
+      <form class="formulario" action="#" method="get">
+        <div>
+          <label for="nombre">Nombre completo:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email" required>
+        </div>
+        <fieldset>
+          <legend>¿A cuál cata deseas asistir?</legend>
+          <div>
+            <input
+              type="radio"
+              id="cata-origen"
+              name="cata"
+              value="origen"
+              required
+            >
+            <label for="cata-origen">
+              Introducción al café de origen
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="cata-aromas"
+              name="cata"
+              value="aromas"
+            >
+            <label for="cata-aromas">
+              Explorando aromas y sabores
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="cata-metodos"
+              name="cata"
+              value="metodos"
+            >
+            <label for="cata-metodos">
+              Métodos de preparación artesanal
+            </label>
+          </div>
+
+        </fieldset>
+        <button type="submit" class="boton">
+          Solicitar inscripción
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer class="pie">
+    <div>
+      <h2 class="pie-titulo">Visítanos</h2>
+      <address>
+        Carrera 7 # 12-45, Santuario, Risaralda
+      </address>
+      <address>
+        Teléfono: 606 368 0000
+      </address>
+    </div>
+    <div>
+      <table>
+        <caption class="pie-titulo">Horario de atención</caption>
+        <thead>
+          <tr>
+            <th scope="col">Días</th>
+            <th scope="col">Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Lunes a viernes</th>
+            <td>8:00 a. m. – 6:00 p. m.</td>
+          </tr>
+          <tr>
+            <th scope="row">Sábados</th>
+            <td>9:00 a. m. – 2:00 p. m.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </footer>
+</body>
+</html>

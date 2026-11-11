@@ -46,3 +46,13 @@ lista de verificación y demuestras que se cumple.
 ## Mi lista de verificación
 
 <!-- Escribe aquí tus 5 o más verificaciones -->
+
+Dado que ingreso a la página de eventos, cuando reviso el encabezado, entonces encuentro un enlace que me permite regresar a la página principal.
+
+Dado que navego por las catas disponibles, cuando reviso sus tarjetas, entonces cada una presenta su nombre, fecha, horario, precio y cantidad de cupos.
+
+Dado que utilizo un lector de pantalla, cuando llego a las imágenes de las catas, entonces puedo identificar su contenido mediante los textos alternativos.
+
+Dado que deseo inscribirme, cuando ingreso mis datos, entonces puedo escribir mi nombre y correo electrónico en campos identificados.
+
+Dado que completo el formulario, cuando intento enviarlo sin aceptar el tratamiento de datos, entonces el navegador solicita completar ese requisito.
